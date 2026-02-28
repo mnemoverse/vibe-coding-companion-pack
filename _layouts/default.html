@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script>
+    // Theme toggle with persistence
+    (function() {
+      const saved = localStorage.getItem('vcp-theme');
+      if (saved) {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <style>
+    /* Theme-aware overrides via data-theme attribute */
+    [data-theme="light"] {
+      --bg: #fafafa;
+      --bg-soft: #f4f4f5;
+      --bg-card: #ffffff;
+      --text: #18181b;
+      --text-muted: #71717a;
+      --text-bright: #09090b;
+      --divider: #e4e4e7;
+      --link: #7c3aed;
+      --link-hover: #5b21b6;
+      --code-bg: #f4f4f5;
+    }
+    [data-theme="dark"] {
+      --bg: #0f0f0f;
+      --bg-soft: #1a1a2e;
+      --bg-card: #16162a;
+      --text: #e4e4e7;
+      --text-muted: #a1a1aa;
+      --text-bright: #fafafa;
+      --divider: #27273a;
+      --link: #a78bfa;
+      --link-hover: #c4b5fd;
+      --code-bg: #1e1e2e;
+    }
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--divider);
+      border-radius: 6px;
+      padding: 0.35rem 0.6rem;
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      color: var(--text-muted);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .theme-toggle:hover {
+      border-color: var(--brand-light);
+      color: var(--text-bright);
+    }
+    [data-theme="dark"] .theme-icon-light { display: none; }
+    [data-theme="light"] .theme-icon-dark { display: none; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/checklists/' | relative_url }}">Checklists</a>
+        <a href="{{ '/prompts/' | relative_url }}">Prompts</a>
+        <a href="{{ '/weekend-plans/' | relative_url }}">Weekend Plans</a>
+        <a href="{{ '/decision-trees/' | relative_url }}">Decisions</a>
+        <a href="{{ '/templates/' | relative_url }}">Templates</a>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+          <span class="theme-icon-dark">&#9790;</span>
+          <span class="theme-icon-light">&#9788;</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <a href="https://github.com/mnemoverse/vibe-coding-companion-pack">GitHub</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://github.com/mnemoverse/vibe-coding-starter">Starter Kit</a>
+      &nbsp;&middot;&nbsp;
+      <span>&copy; {{ 'now' | date: '%Y' }} Eduard Izgorodin</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('vcp-theme', next);
+    }
+  </script>
+</body>
+</html>

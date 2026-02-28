@@ -1,5 +1,16 @@
-title: Vibe Coding Bible — Companion Pack
-description: Free companion resources for the Vibe Coding Bible by Edward Izgorodin
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-  - jekyll-remote-theme
+title: Vibe Coding Companion Pack
+description: Free companion resources for the Vibe Coding Bible by Eduard Izgorodin
+url: https://mnemoverse.github.io
+baseurl: /vibe-coding-companion-pack
+
+# No remote theme — custom layout in _layouts/default.html
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - LICENSE
+  - CHANGELOG.md
+  - .gitignore

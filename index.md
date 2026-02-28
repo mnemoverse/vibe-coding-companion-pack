@@ -1,65 +1,57 @@
 ---
-title: Vibe Coding Bible — Companion Pack
+title: Vibe Coding Companion Pack
 ---
 
 # Vibe Coding Bible: Creator's Playbook
 
-**Companion Pack — Free resources from the book**
+**Companion Pack** — 103 free resources from the book's workshop appendices.
 
----
-
-## What this is
-
-The Vibe Coding Bible teaches you to build with AI coding tools. This companion pack gives you the printable checklists, copy-paste prompts, and reusable templates from the book's appendices.
-
----
-
-## Who this is for
-
-- Readers of the Vibe Coding Bible who want quick-reference materials
-- Developers evaluating the book who want to see the quality of resources
-- Teams implementing vibe coding practices who need shared artifacts
+Pick a resource, copy it, use it. Replace `[PLACEHOLDERS]` with your details. Each prompt has a "tired version" for low-energy days.
 
 ---
 
 ## Resources
 
-### [Checklists](checklists/)
+### [Checklists](checklists/) — 8
 
-8 production-ready checklists: AI Code Review, Ship-Ready Bar, Pre-Deployment, Three-Stage Quality Gate, No Silent Failures Contract, Ethics Quick Reference, DX Checklist, Four Outcomes Frame.
+AI Code Review, Ship-Ready Bar, Pre-Deployment, Three-Stage Quality Gate, No Silent Failures, Ethics Quick Reference, DX Checklist, Four Outcomes Frame.
 
-### [Templates](templates/)
+### [Prompt Library](prompts/) — 77
 
-4 reusable templates: Feature Spec, ADR, Handoff Note, Return Runbook.
+Tool-agnostic prompts across 8 categories. Each produces one artifact you can commit. Works with any AI tool.
 
-### [Decision Trees](decision-trees/)
+### [Weekend Build Plans](weekend-plans/) — 10
 
-4 decision flowcharts: Vibe vs Review, Troubleshooting, Security, Kickoff.
+Time-boxed practice sessions. Each has 2h, 6h, and 12h versions. Pick the one you can finish.
 
-### [Prompt Library](prompts/)
+### [Decision Trees](decision-trees/) — 4
 
-77 tool-agnostic prompts across 8 categories. Each produces one artifact you can commit. Works with any AI tool.
+Vibe vs Review, Troubleshooting, Security, Project Kickoff.
 
-### [Weekend Build Plans](weekend-plans/)
+### [Templates](templates/) — 4
 
-10 time-boxed practice sessions. Each has 2h, 6h, and 12h versions. Pick the one you can finish.
+Feature Spec, ADR, Handoff Note, Return Runbook.
 
 ---
 
 ## The Starter Kit
 
-These prompts are also available as interactive Claude Code skills:
+These prompts are also available as interactive, context-aware skills:
 
-**[vibe-coding-starter](https://github.com/mnemoverse/vibe-coding-starter)** — A template repo that turns prompts into context-aware workflows.
-
----
-
-## Errata
-
-[Known issues and corrections](errata/)
+**[vibe-coding-starter](https://github.com/mnemoverse/vibe-coding-starter)** — a template repo that turns prompts into a living agent system. Works with Claude Code, Cursor, Copilot, Windsurf, Cline, Gemini, Aider, and more.
 
 ---
 
-## Versioning
+## The Book
 
-Companion Pack releases are tagged to the book edition. The book is a stable snapshot. Updates go here first.
+**Vibe Coding Bible, Vol 1: Creator's Playbook**
+
+From zero to shipping with AI coding tools. 5 narrative chapters + 14 workshop appendices + 7 reference appendices.
+
+---
+
+## Links
+
+- [GitHub repo](https://github.com/mnemoverse/vibe-coding-companion-pack)
+- [Starter Kit](https://github.com/mnemoverse/vibe-coding-starter)
+- [Errata](errata/)
