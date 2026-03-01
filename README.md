@@ -9,6 +9,7 @@
   <a href="LICENSE"><img alt="License: CC BY-NC 4.0" src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg"></a>
   <a href="prompts/"><img alt="Prompts: 77" src="https://img.shields.io/badge/prompts-77-blue.svg"></a>
   <a href="checklists/"><img alt="Checklists: 8" src="https://img.shields.io/badge/checklists-8-orange.svg"></a>
+  <a href="resources/"><img alt="Sources: 230+" src="https://img.shields.io/badge/sources-230%2B-purple.svg"></a>
 </p>
 
 <p align="center">
@@ -19,7 +20,7 @@
 
 ## What's Inside
 
-103 resources across 5 categories — extracted from the book's workshop appendices for daily use.
+103+ resources across 6 categories — extracted from the book's workshop appendices and research library for daily use.
 
 | Category | Count | What you get |
 |:---------|:-----:|:-------------|
@@ -28,6 +29,7 @@
 | [**Weekend Plans**](weekend-plans/) | 10 | Time-boxed build sessions in 2h / 6h / 12h versions |
 | [**Decision Trees**](decision-trees/) | 4 | Vibe vs review, troubleshooting, security, project kickoff |
 | [**Templates**](templates/) | 4 | Feature spec, ADR, handoff note, return runbook |
+| [**Resources**](resources/) | 230+ | Further reading, extended source list (230 entries), practitioners to follow |
 
 ---
 

@@ -32,6 +32,10 @@ Vibe vs Review, Troubleshooting, Security, Project Kickoff.
 
 Feature Spec, ADR, Handoff Note, Return Runbook.
 
+### [Resources](resources/) — 230+
+
+Further reading, extended research bibliography (230 curated sources from 827+), and practitioners to follow.
+
 ---
 
 ## The Starter Kit
